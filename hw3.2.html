@@ -1,0 +1,27 @@
+<script src="index.js">
+
+function userInfo() {
+
+    this.registraited === true ? console.log("Дата регистрации", this.data ) : console.log ("Незарегестривани пользователь", this.name);
+
+}
+
+var onePeople = {
+    getInfo: userInfo,
+    name: 'Iwan',
+    registraited: true,
+    data: new Date().toLocaleString().slice(0,9),
+}
+
+var secondPeople = {
+    getInfo: userInfo,
+    name: 'Tolik',
+    registraited: false,
+    data: new Date().toLocaleString().slice(0,9),
+    
+}
+
+console.log (onePeople.getInfo());
+console.log (secondPeople.getInfo());
+
+</script>
